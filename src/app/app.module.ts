@@ -8,6 +8,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ComponentComponent } from './component/component.component';
 import { MenubarComponent } from './menubar/menubar.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
