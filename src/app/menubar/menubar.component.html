@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-sm" style="background-color: pink;">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/Home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Features">Features</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Product">Products</a>
+        </li>
+    </ul>
+</nav>
+
+
+<!-- A vertical navbar -->
+
+
+<div class="row">
+    <div class="col-2">
+        <nav class="navbar" style="background-color:blueviolet;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/menu/aboutus">Aboutus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/menu/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/menu/component">Library</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-10">
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<form #submit="ngForm">
+    <label>name</label>
+    <input type="text" name="name" [(ngModel)]="name">
+    <label > college</label>
+    <input type="text" name="college" [(ngModel)]="college">
+    <label >Age</label>
+    <input type="number" name="age" [(ngModel)]="age">
+    <label>Gender</label>
+    <input type="radio" name="gender" > Male
+    <input type="radio" name="gender">Female
+    <button type="submit" (click)="Save(submit)">Save</button>
+</form>

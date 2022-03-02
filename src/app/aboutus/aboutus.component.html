@@ -1,0 +1,71 @@
+<form #submit="ngForm">
+    <div class="row d-flex">
+        <div class="col-2">
+            <label>username</label>
+        </div>
+
+        <div class="col-4">
+            <input type="text" name="username" [(ngModel)]="username">
+        </div>
+        <!-- <div class="row"> -->
+        <div class="col-2">
+            <label>password</label>
+        </div>
+        <div class="col-4">
+            <input type="password" name="password" [(ngModel)]="password">
+        </div>
+        <!-- <div class="row"> -->
+        <div class="col-2">
+            <label>mail</label>
+        </div>
+        <div class="col-4">
+            <input type="email" name="mail" [(ngModel)]="mail">
+        </div>
+
+        <!-- <div class="row"> -->
+        <div class="col-2">
+            <label>mobile number</label>
+        </div>
+        <div class="col-4">
+            <input type="number" name="mobile" [(ngModel)]="mobile">
+        </div>
+
+        <!-- <div class="row"> -->
+        <div class="col-2">
+            <label>date of birth</label>
+        </div>
+        <div class="col-4">
+            <input type="date" name="date" [(ngModel)]="date">
+        </div>
+
+        <!-- <div class="row"> -->
+        <div class="col-2">
+            <label>address</label>
+        </div>
+        <div class="col-4">
+            <input type="address" name="address" [(ngModel)]="address">
+        </div>
+        <!-- <div class="row"> -->
+        <!-- 
+        </div> -->
+        <div class="col-2">
+            <label>surname</label>
+        </div>
+        <div class="col-4">
+            <input type="surname" name="surname" [(ngModel)]="surname">
+        </div>
+
+        <div class="col-2">
+            <label>Description</label>
+        </div>
+        <div>
+            <input type="text" name="description" [(ngModel)]="description">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <button type="submit" (click)="save(submit)">save</button>
+        </div>
+    </div>
+</form>
